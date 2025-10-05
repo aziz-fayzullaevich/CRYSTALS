@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --light-orange: #FACCBF;
+    --beige-color: #E3D8C1;
+    --grey-color: #878C8F;
+    --pink-color: #C09DBD;
+    --yellow-color: #FAEDA3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --box-shadow-green: #3FCA874F;
+    --bg-light-pink-color: #EAC1BF;
+    --bg-light-pink-color-2: #eac1bf2b;
+    --bg-pink-color: #EAC1BFA3;
+    --fonts-belleza: "Belleza", sans-serif;
+    --fonts-karla: "Karla", sans-serif;
+}
+
+body {
+    font-family: var(--fonts-belleza);
+}
+
+section {
+    padding: 40px 0;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonts-karla);
+    border-radius: 20px;
+    font-size: clamp(14px, 2vw, 16px);
+}
